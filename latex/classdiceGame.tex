@@ -1,0 +1,113 @@
+\hypertarget{classdiceGame}{}\section{dice\+Game Class Reference}
+\label{classdiceGame}\index{dice\+Game@{dice\+Game}}
+
+
+Interface for all dice games to use.  
+
+
+
+
+{\ttfamily \#include $<$dice\+Game.\+h$>$}
+
+
+
+Inheritance diagram for dice\+Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{classdiceGame__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for dice\+Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classdiceGame__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdiceGame_ae964394c63494b6ceb6403e7a66aa4b2}{dice\+Game} ()
+\begin{DoxyCompactList}\small\item\em Constructor for creating a dice game. \end{DoxyCompactList}\item 
+\hyperlink{classdiceGame_a33c18d6e62bb7599befc405ecbb21402}{$\sim$dice\+Game} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor for the dice game which frees memory. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classdiceGame_a0620d98347df4779fa620b3b3e239d4e}{play} ()=0
+\begin{DoxyCompactList}\small\item\em play function which allows the players to play the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdiceGame_a3a3719c16a28497eba3a36edc73119ad}\label{classdiceGame_a3a3719c16a28497eba3a36edc73119ad}} 
+\hyperlink{classdice}{dice} $\ast$ {\bfseries playing\+Dice}
+\item 
+\mbox{\Hypertarget{classdiceGame_ae67da3cda73d2b5a90bb0ed9365c2b8b}\label{classdiceGame_ae67da3cda73d2b5a90bb0ed9365c2b8b}} 
+std\+::vector$<$ \hyperlink{classPlayer}{Player} $\ast$ $>$ {\bfseries player\+List}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for all dice games to use. 
+
+\begin{DoxyAuthor}{Author}
+Owen Hunsburger 250919957
+\end{DoxyAuthor}
+Provides each dice game with dice and players required 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdiceGame_ae964394c63494b6ceb6403e7a66aa4b2}\label{classdiceGame_ae964394c63494b6ceb6403e7a66aa4b2}} 
+\index{dice\+Game@{dice\+Game}!dice\+Game@{dice\+Game}}
+\index{dice\+Game@{dice\+Game}!dice\+Game@{dice\+Game}}
+\subsubsection{\texorpdfstring{dice\+Game()}{diceGame()}}
+{\footnotesize\ttfamily dice\+Game\+::dice\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for creating a dice game. 
+
+\begin{DoxyAuthor}{Author}
+Owen Hunsburger 250919957 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+a dice game
+\end{DoxyReturn}
+Creates a new instance of a dice game \mbox{\Hypertarget{classdiceGame_a33c18d6e62bb7599befc405ecbb21402}\label{classdiceGame_a33c18d6e62bb7599befc405ecbb21402}} 
+\index{dice\+Game@{dice\+Game}!````~dice\+Game@{$\sim$dice\+Game}}
+\index{````~dice\+Game@{$\sim$dice\+Game}!dice\+Game@{dice\+Game}}
+\subsubsection{\texorpdfstring{$\sim$dice\+Game()}{~diceGame()}}
+{\footnotesize\ttfamily dice\+Game\+::$\sim$dice\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Deconstructor for the dice game which frees memory. 
+
+\begin{DoxyAuthor}{Author}
+Owen Hunsburger 250919957
+\end{DoxyAuthor}
+Deletes the dice used in previously made dice game 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdiceGame_a0620d98347df4779fa620b3b3e239d4e}\label{classdiceGame_a0620d98347df4779fa620b3b3e239d4e}} 
+\index{dice\+Game@{dice\+Game}!play@{play}}
+\index{play@{play}!dice\+Game@{dice\+Game}}
+\subsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily virtual void dice\+Game\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+play function which allows the players to play the game 
+
+\begin{DoxyAuthor}{Author}
+Owen Hunsburger 250919957
+\end{DoxyAuthor}
+calls the game which implements the game logic and takes user input 
+
+Implemented in \hyperlink{classpig_a83fd8571e2f33ec33f6fafd7efa96571}{pig}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Base\+Dice/dice\+Game.\+h\item 
+Base\+Dice/dice\+Game.\+cpp\end{DoxyCompactItemize}

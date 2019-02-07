@@ -1,0 +1,142 @@
+\hypertarget{classMenu}{}\section{Menu Class Reference}
+\label{classMenu}\index{Menu@{Menu}}
+
+
+\hyperlink{classMenu}{Menu} Class represents the text based main menu which allows navigation of our program.  
+
+
+
+
+{\ttfamily \#include $<$Menu.\+h$>$}
+
+
+
+Collaboration diagram for Menu\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{classMenu__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMenu_ad466dd83355124a6ed958430450bfe94}{Menu} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classMenu}{Menu} constructor which acts as the main for our program running everything through this. \end{DoxyCompactList}\item 
+void \hyperlink{classMenu_ab9be630400e32b048b2f48ebcbc6303e}{register\+User} (std\+::string uname, std\+::string pword)
+\begin{DoxyCompactList}\small\item\em Registers the user into the userdata.\+txt database. \end{DoxyCompactList}\item 
+void \hyperlink{classMenu_af8c8f162dc3243212f2da97caac85e46}{view\+Leaderboard} ()
+\begin{DoxyCompactList}\small\item\em allows user to view the leaderboard section. \end{DoxyCompactList}\item 
+\hyperlink{classPlayer}{Player} $\ast$ \hyperlink{classMenu_a5b7acd7315b89b7db11e0791ef6edc44}{login} (std\+::string username, std\+::string password)
+\begin{DoxyCompactList}\small\item\em Allows user that is already registered to login. \end{DoxyCompactList}\item 
+\hyperlink{classPlayer}{Player} $\ast$ \hyperlink{classMenu_a8a89cf8a328d06d20edf1a807865c8f6}{get\+Logged\+In\+User} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the currently logged in user. \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classPlayer}{Player} $\ast$ $>$ \hyperlink{classMenu_a1a6c905c9a2bcb5bed082baeb2d4929a}{get\+User\+List} ()
+\begin{DoxyCompactList}\small\item\em returns the userlist of players currently playing/loggedin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMenu_acf5fcd8a7996710086267c856991b053}\label{classMenu_acf5fcd8a7996710086267c856991b053}} 
+std\+::vector$<$ \hyperlink{classPlayer}{Player} $\ast$ $>$ {\bfseries player\+List}
+\item 
+\mbox{\Hypertarget{classMenu_a9fec21a0fe02ffaf00ff13261a986eb1}\label{classMenu_a9fec21a0fe02ffaf00ff13261a986eb1}} 
+\hyperlink{classPlayer}{Player} $\ast$ {\bfseries loggedinuser}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classMenu}{Menu} Class represents the text based main menu which allows navigation of our program. 
+
+\hyperlink{classMenu}{Menu} class provides options off the bat to either login, register, check the leaderboard or exit If register is chosen it adds this user to our userdata.\+txt ascii database, Login references the userdata and checks if the uname and pword are valid. leaderboard allows for the display of the entire leaderboard or an individuals highscores. Exit command will exit our program whenever the option is available. The menu allows for navigation and implementation and all our other features. \begin{DoxyAuthor}{Author}
+Matthew Costa 250921778 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMenu_ad466dd83355124a6ed958430450bfe94}\label{classMenu_ad466dd83355124a6ed958430450bfe94}} 
+\index{Menu@{Menu}!Menu@{Menu}}
+\index{Menu@{Menu}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily Menu\+::\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classMenu}{Menu} constructor which acts as the main for our program running everything through this. 
+
+\begin{DoxyReturn}{Returns}
+n/a  n/a
+\end{DoxyReturn}
+\hyperlink{classMenu}{Menu} constructor that continues to run until the user enters Exit, It continuously loops to different sections depending on input to allow for the experience of a text based menu. Has multiple verification checks on input and acts as a text based menu for our entire program. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMenu_a8a89cf8a328d06d20edf1a807865c8f6}\label{classMenu_a8a89cf8a328d06d20edf1a807865c8f6}} 
+\index{Menu@{Menu}!get\+Logged\+In\+User@{get\+Logged\+In\+User}}
+\index{get\+Logged\+In\+User@{get\+Logged\+In\+User}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{get\+Logged\+In\+User()}{getLoggedInUser()}}
+{\footnotesize\ttfamily \hyperlink{classPlayer}{Player} $\ast$ Menu\+::get\+Logged\+In\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns a pointer to the currently logged in user. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to logged in player  n/a
+\end{DoxyReturn}
+Returns the user that is saved as the logged in user. It returns the player as a player pointer that is stored when a user logs in using the login function. \mbox{\Hypertarget{classMenu_a1a6c905c9a2bcb5bed082baeb2d4929a}\label{classMenu_a1a6c905c9a2bcb5bed082baeb2d4929a}} 
+\index{Menu@{Menu}!get\+User\+List@{get\+User\+List}}
+\index{get\+User\+List@{get\+User\+List}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{get\+User\+List()}{getUserList()}}
+{\footnotesize\ttfamily vector$<$ \hyperlink{classPlayer}{Player} $\ast$ $>$ Menu\+::get\+User\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the userlist of players currently playing/loggedin. 
+
+\begin{DoxyReturn}{Returns}
+vector of player pointers  n/a
+\end{DoxyReturn}
+Returns a vector which contains all the players currently logged in or playing the game. This could contain pseudo profiles if a guest is playing the game instead of two logged in players. \mbox{\Hypertarget{classMenu_a5b7acd7315b89b7db11e0791ef6edc44}\label{classMenu_a5b7acd7315b89b7db11e0791ef6edc44}} 
+\index{Menu@{Menu}!login@{login}}
+\index{login@{login}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{login()}{login()}}
+{\footnotesize\ttfamily \hyperlink{classPlayer}{Player} $\ast$ Menu\+::login (\begin{DoxyParamCaption}\item[{std\+::string}]{username,  }\item[{std\+::string}]{password }\end{DoxyParamCaption})}
+
+
+
+Allows user that is already registered to login. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the player that is logged in  the username and password of the user that is trying to login
+\end{DoxyReturn}
+Uses the paramaters given to check if the user is able to login. If valid username and password the user is logged in and added to the playerlist. Otherwise it informs the user of invalid credentials. Makes use of the player class to verify by calling ispseudo to see if the player returned was a valid user or a pseudo profile returned. If valid stores this player as the loggedinuser \mbox{\Hypertarget{classMenu_ab9be630400e32b048b2f48ebcbc6303e}\label{classMenu_ab9be630400e32b048b2f48ebcbc6303e}} 
+\index{Menu@{Menu}!register\+User@{register\+User}}
+\index{register\+User@{register\+User}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{register\+User()}{registerUser()}}
+{\footnotesize\ttfamily void Menu\+::register\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{uname,  }\item[{std\+::string}]{pword }\end{DoxyParamCaption})}
+
+
+
+Registers the user into the userdata.\+txt database. 
+
+\begin{DoxyReturn}{Returns}
+void  the username and password of the user that is trying to register
+\end{DoxyReturn}
+Uses the paramaters given to register the user by adding them to the userdata.\+txt file. Method checks for an existing profile with these credentials and if it finds one informs the user of a failed register. Method also checks if the params include a comma and informs the user that the registry cant happen with commas. \mbox{\Hypertarget{classMenu_af8c8f162dc3243212f2da97caac85e46}\label{classMenu_af8c8f162dc3243212f2da97caac85e46}} 
+\index{Menu@{Menu}!view\+Leaderboard@{view\+Leaderboard}}
+\index{view\+Leaderboard@{view\+Leaderboard}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{view\+Leaderboard()}{viewLeaderboard()}}
+{\footnotesize\ttfamily void Menu\+::view\+Leaderboard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+allows user to view the leaderboard section. 
+
+\begin{DoxyReturn}{Returns}
+void  n/a
+\end{DoxyReturn}
+Allows user to view the leaderboard with one of two options. Either the user can choose to view one players leaderboard values or the entire leaderboard. Depending on the choice two different methods from the leaderboard class are called. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Base\+Menu/Menu.\+h\item 
+Base\+Menu/Menu.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,303 @@
+\hypertarget{class_player}{}\section{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+Provides a class representation of everything a player has in and associated with a game.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player}} ()
+\begin{DoxyCompactList}\small\item\em Empty constructor which makes a temporary profile with default values for variables. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player_a61d2a5c3a5f6a6e4a408ba802337af51}{Player}} (std\+::string uname, std\+::string pword)
+\begin{DoxyCompactList}\small\item\em Constructor which Checks records for a user and logs them in. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_player_a73c00480e9459d52998262f23f6fc5dc}{get\+Username}} ()
+\begin{DoxyCompactList}\small\item\em Getter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s username. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a8fc488bcda5714ae92466d2936380787}{set\+Username}} (std\+::string uname)
+\begin{DoxyCompactList}\small\item\em Setter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s username. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_player_aef0e6355f59ecc9a72dfda313c603b5e}{get\+Password}} ()
+\begin{DoxyCompactList}\small\item\em Getter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s password. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_afff83ec36cc74b248cf1a723ab0c2b6a}{set\+Password}} (std\+::string pword)
+\begin{DoxyCompactList}\small\item\em Setter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s password. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_player_a0e9f70886f4a7544422931103e59ea26}{get\+Balance}} ()
+\begin{DoxyCompactList}\small\item\em Getter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s balance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a7bdcb72d5d22f6f7c1dfa48d960b6d73}{set\+Balance}} (double bal)
+\begin{DoxyCompactList}\small\item\em Setter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s balance. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_player_a42286b7c54da75f7b64200796f149d4c}{get\+Highscore}} (std\+::string game)
+\begin{DoxyCompactList}\small\item\em Getter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s highscore. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_ae77a5ec07cea02f94c7c8bc9830e2521}{set\+Highscore}} (std\+::string game, double score)
+\begin{DoxyCompactList}\small\item\em Setter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s highscore for the given game. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_player_a0aade73735727e68e4f07734e76c875a}{get\+Current\+Game\+Score}} ()
+\begin{DoxyCompactList}\small\item\em Getter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s current game score. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a1b2af56d4beb6e7a7961b3b572b42bdb}{set\+Current\+Game\+Score}} (double score)
+\begin{DoxyCompactList}\small\item\em Setter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s current game score. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_player_a50aa73eae22ec3435d3de2e556bd1fec}{is\+Pseudo}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the user object is a temp or is a pseudo profile. \end{DoxyCompactList}\item 
+std\+::vector$<$ card $\ast$ $>$ \mbox{\hyperlink{class_player_a5117d4863ff28cd0bf522cfe34995c27}{get\+Current\+Hand}} ()
+\begin{DoxyCompactList}\small\item\em Getter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s current hand in the game they are playing. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_player_a8a4e0a62953bad66dd6dd18f28619ead}{set\+Current\+Hand}} (std\+::vector$<$ card $\ast$$>$ hand)
+\begin{DoxyCompactList}\small\item\em Setter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s current hand. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides a class representation of everything a player has in and associated with a game. 
+
+\begin{DoxyAuthor}{Author}
+Thomas Morphew 250921958 The \mbox{\hyperlink{class_player}{Player}} class represents someone playing the game. All Players will have a username, password, and a balance that they can bring between gambling games. An instance of this class has quick access data stored in its instance variables. Changing these values will also write them to a file for recording purposes. A \mbox{\hyperlink{class_player}{Player}} in a card game may have a \char`\"{}hand\char`\"{} of cards to keep track of what cards are available. Players can be both \char`\"{}real\char`\"{} or \char`\"{}pseudo\char`\"{} (which effectively means temporary). This duality of the class lets it represent AI\textquotesingle{}s that games may need to run or double as a temporary profile for a trial player. 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}\label{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Empty constructor which makes a temporary profile with default values for variables. 
+
+\begin{DoxyReturn}{Returns}
+a pseudo profile with default values for instance variables.
+\end{DoxyReturn}
+An empty constructor which makes a temporary profile with default values for variables. This can be used as a temporary player, ideal for AI in games. \mbox{\Hypertarget{class_player_a61d2a5c3a5f6a6e4a408ba802337af51}\label{class_player_a61d2a5c3a5f6a6e4a408ba802337af51}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection{\texorpdfstring{Player()}{Player()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}\item[{std\+::string}]{uname,  }\item[{std\+::string}]{pword }\end{DoxyParamCaption})}
+
+
+
+Constructor which Checks records for a user and logs them in. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uname} & is the username of a player\textquotesingle{}s record \\
+\hline
+{\em pword} & is the password of a player\textquotesingle{}s record \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a player\textquotesingle{}s profile with their saved data loaded into the object if login successful, otherwise it returns a temporary profile. 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_player_a0e9f70886f4a7544422931103e59ea26}\label{class_player_a0e9f70886f4a7544422931103e59ea26}} 
+\index{Player@{Player}!get\+Balance@{get\+Balance}}
+\index{get\+Balance@{get\+Balance}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Balance()}{getBalance()}}
+{\footnotesize\ttfamily double Player\+::get\+Balance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s balance. 
+
+\begin{DoxyReturn}{Returns}
+the balance for the \mbox{\hyperlink{class_player}{Player}} object
+\end{DoxyReturn}
+Getter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s balance. Useful for keeping track of money between games. \mbox{\Hypertarget{class_player_a0aade73735727e68e4f07734e76c875a}\label{class_player_a0aade73735727e68e4f07734e76c875a}} 
+\index{Player@{Player}!get\+Current\+Game\+Score@{get\+Current\+Game\+Score}}
+\index{get\+Current\+Game\+Score@{get\+Current\+Game\+Score}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Current\+Game\+Score()}{getCurrentGameScore()}}
+{\footnotesize\ttfamily double Player\+::get\+Current\+Game\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s current game score. 
+
+\begin{DoxyReturn}{Returns}
+the current score for the \mbox{\hyperlink{class_player}{Player}} in the game they are playing
+\end{DoxyReturn}
+Gets the current score of the \mbox{\hyperlink{class_player}{Player}} for the game they are currently playing in. \mbox{\Hypertarget{class_player_a5117d4863ff28cd0bf522cfe34995c27}\label{class_player_a5117d4863ff28cd0bf522cfe34995c27}} 
+\index{Player@{Player}!get\+Current\+Hand@{get\+Current\+Hand}}
+\index{get\+Current\+Hand@{get\+Current\+Hand}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Current\+Hand()}{getCurrentHand()}}
+{\footnotesize\ttfamily std\+::vector$<$ card $\ast$ $>$ Player\+::get\+Current\+Hand (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s current hand in the game they are playing. 
+
+\begin{DoxyReturn}{Returns}
+the current hand of cards for the \mbox{\hyperlink{class_player}{Player}} in the game they are playing
+\end{DoxyReturn}
+Gets the current hand of cards the \mbox{\hyperlink{class_player}{Player}} has for the game they are currently playing in. \mbox{\Hypertarget{class_player_a42286b7c54da75f7b64200796f149d4c}\label{class_player_a42286b7c54da75f7b64200796f149d4c}} 
+\index{Player@{Player}!get\+Highscore@{get\+Highscore}}
+\index{get\+Highscore@{get\+Highscore}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Highscore()}{getHighscore()}}
+{\footnotesize\ttfamily double Player\+::get\+Highscore (\begin{DoxyParamCaption}\item[{std\+::string}]{game }\end{DoxyParamCaption})}
+
+
+
+Getter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s highscore. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & is the name of the game in the record file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the highscore for the \mbox{\hyperlink{class_player}{Player}} for the game given by the parameter
+\end{DoxyReturn}
+Gets the highscore of the \mbox{\hyperlink{class_player}{Player}} for the game given by the parameter. Accesses the record file directly, may perform slowly for large files. \mbox{\Hypertarget{class_player_aef0e6355f59ecc9a72dfda313c603b5e}\label{class_player_aef0e6355f59ecc9a72dfda313c603b5e}} 
+\index{Player@{Player}!get\+Password@{get\+Password}}
+\index{get\+Password@{get\+Password}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Password()}{getPassword()}}
+{\footnotesize\ttfamily std\+::string Player\+::get\+Password (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s password. 
+
+\begin{DoxyReturn}{Returns}
+the password for the \mbox{\hyperlink{class_player}{Player}} object
+\end{DoxyReturn}
+Getter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s password. Useful for logging in (security). \mbox{\Hypertarget{class_player_a73c00480e9459d52998262f23f6fc5dc}\label{class_player_a73c00480e9459d52998262f23f6fc5dc}} 
+\index{Player@{Player}!get\+Username@{get\+Username}}
+\index{get\+Username@{get\+Username}!Player@{Player}}
+\subsubsection{\texorpdfstring{get\+Username()}{getUsername()}}
+{\footnotesize\ttfamily std\+::string Player\+::get\+Username (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s username. 
+
+\begin{DoxyReturn}{Returns}
+the username for the \mbox{\hyperlink{class_player}{Player}} object
+\end{DoxyReturn}
+Getter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s username. Useful for displaying in games. \mbox{\Hypertarget{class_player_a50aa73eae22ec3435d3de2e556bd1fec}\label{class_player_a50aa73eae22ec3435d3de2e556bd1fec}} 
+\index{Player@{Player}!is\+Pseudo@{is\+Pseudo}}
+\index{is\+Pseudo@{is\+Pseudo}!Player@{Player}}
+\subsubsection{\texorpdfstring{is\+Pseudo()}{isPseudo()}}
+{\footnotesize\ttfamily bool Player\+::is\+Pseudo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the user object is a temp or is a pseudo profile. 
+
+\begin{DoxyReturn}{Returns}
+a bool, true if the \mbox{\hyperlink{class_player}{Player}} is a pseudo profile or false otherwise.
+\end{DoxyReturn}
+Checks if the player is a pseudo (temporary) player. Pseudo players are temporary and do not save to the record file. \mbox{\Hypertarget{class_player_a7bdcb72d5d22f6f7c1dfa48d960b6d73}\label{class_player_a7bdcb72d5d22f6f7c1dfa48d960b6d73}} 
+\index{Player@{Player}!set\+Balance@{set\+Balance}}
+\index{set\+Balance@{set\+Balance}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Balance()}{setBalance()}}
+{\footnotesize\ttfamily void Player\+::set\+Balance (\begin{DoxyParamCaption}\item[{double}]{bal }\end{DoxyParamCaption})}
+
+
+
+Setter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s balance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bal} & is the new balance for the record \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+Sets the balance for the object and also saves it to the record file. \mbox{\Hypertarget{class_player_a1b2af56d4beb6e7a7961b3b572b42bdb}\label{class_player_a1b2af56d4beb6e7a7961b3b572b42bdb}} 
+\index{Player@{Player}!set\+Current\+Game\+Score@{set\+Current\+Game\+Score}}
+\index{set\+Current\+Game\+Score@{set\+Current\+Game\+Score}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Current\+Game\+Score()}{setCurrentGameScore()}}
+{\footnotesize\ttfamily void Player\+::set\+Current\+Game\+Score (\begin{DoxyParamCaption}\item[{double}]{score }\end{DoxyParamCaption})}
+
+
+
+Setter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s current game score. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & is the new score of the current game to save to the record file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+Sets the current score of the \mbox{\hyperlink{class_player}{Player}} for the game they are current playing in. \mbox{\Hypertarget{class_player_a8a4e0a62953bad66dd6dd18f28619ead}\label{class_player_a8a4e0a62953bad66dd6dd18f28619ead}} 
+\index{Player@{Player}!set\+Current\+Hand@{set\+Current\+Hand}}
+\index{set\+Current\+Hand@{set\+Current\+Hand}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Current\+Hand()}{setCurrentHand()}}
+{\footnotesize\ttfamily void Player\+::set\+Current\+Hand (\begin{DoxyParamCaption}\item[{std\+::vector$<$ card $\ast$$>$}]{hand }\end{DoxyParamCaption})}
+
+
+
+Setter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s current hand. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hand} & is the new hand of the current game the player is in. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+Sets the current hand of cards the \mbox{\hyperlink{class_player}{Player}} has for the game they are current playing in. \mbox{\Hypertarget{class_player_ae77a5ec07cea02f94c7c8bc9830e2521}\label{class_player_ae77a5ec07cea02f94c7c8bc9830e2521}} 
+\index{Player@{Player}!set\+Highscore@{set\+Highscore}}
+\index{set\+Highscore@{set\+Highscore}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Highscore()}{setHighscore()}}
+{\footnotesize\ttfamily void Player\+::set\+Highscore (\begin{DoxyParamCaption}\item[{std\+::string}]{game,  }\item[{double}]{score }\end{DoxyParamCaption})}
+
+
+
+Setter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s highscore for the given game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & is the name of the game in the record file \\
+\hline
+{\em score} & is the new score of the game to save to the record file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+Sets the highscore of the \mbox{\hyperlink{class_player}{Player}} for the game given by the parameter. Saves the new highscore to record file. \mbox{\Hypertarget{class_player_afff83ec36cc74b248cf1a723ab0c2b6a}\label{class_player_afff83ec36cc74b248cf1a723ab0c2b6a}} 
+\index{Player@{Player}!set\+Password@{set\+Password}}
+\index{set\+Password@{set\+Password}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Password()}{setPassword()}}
+{\footnotesize\ttfamily void Player\+::set\+Password (\begin{DoxyParamCaption}\item[{std\+::string}]{pword }\end{DoxyParamCaption})}
+
+
+
+Setter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pword} & is the new password for the record \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+Sets the password for the object and also saves it to the record file. \mbox{\Hypertarget{class_player_a8fc488bcda5714ae92466d2936380787}\label{class_player_a8fc488bcda5714ae92466d2936380787}} 
+\index{Player@{Player}!set\+Username@{set\+Username}}
+\index{set\+Username@{set\+Username}!Player@{Player}}
+\subsubsection{\texorpdfstring{set\+Username()}{setUsername()}}
+{\footnotesize\ttfamily void Player\+::set\+Username (\begin{DoxyParamCaption}\item[{std\+::string}]{uname }\end{DoxyParamCaption})}
+
+
+
+Setter method for the \mbox{\hyperlink{class_player}{Player}}\textquotesingle{}s username. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uname} & is the new username for the record \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+Sets the username for the object and also saves it to the record file if it is not in use. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/morph\+\_\+000/\+Documents/\+School\+Work/\+Western Y3/\+C\+S 3307\+A/\+V\+M\+Share/group5/\+Base\+Player/Player.\+h\item 
+C\+:/\+Users/morph\+\_\+000/\+Documents/\+School\+Work/\+Western Y3/\+C\+S 3307\+A/\+V\+M\+Share/group5/\+Base\+Player/Player.\+cpp\end{DoxyCompactItemize}

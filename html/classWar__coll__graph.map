@@ -1,0 +1,4 @@
+<map id="War" name="War">
+<area shape="rect" id="node2" href="$classcardGame.html" title="CardGame class creates a interface for all card games to follow. " alt="" coords="111,95,193,121"/>
+<area shape="rect" id="node3" href="$classdeck.html" title="deck class creates deck of cards " alt="" coords="5,5,56,32"/>
+</map>

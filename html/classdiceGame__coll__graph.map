@@ -1,0 +1,3 @@
+<map id="diceGame" name="diceGame">
+<area shape="rect" id="node2" href="$classdice.html" title="Simulates the rolling of dice. " alt="" coords="23,5,69,32"/>
+</map>

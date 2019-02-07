@@ -1,0 +1,176 @@
+\hypertarget{classdeck}{}\section{deck Class Reference}
+\label{classdeck}\index{deck@{deck}}
+
+
+deck class creates deck of cards  
+
+
+
+
+{\ttfamily \#include $<$Deck.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdeck_a2ff8465ba7b13201bdf650fe461b442e}{deck} ()
+\begin{DoxyCompactList}\small\item\em deck constructor creates a deck of cards \end{DoxyCompactList}\item 
+int \hyperlink{classdeck_ada0bdbb4dcd27f39db797925ac0c11ce}{get\+Deck\+Size} ()
+\begin{DoxyCompactList}\small\item\em get\+Deck\+Size function returns the size of the deck \end{DoxyCompactList}\item 
+int \hyperlink{classdeck_a12c0517bc9926f407aee8262ace72bf8}{add\+Card} (int suit, int value)
+\begin{DoxyCompactList}\small\item\em add\+Card function adds a card to the deck \end{DoxyCompactList}\item 
+int \hyperlink{classdeck_a4c60464da694301c1b7b4275bae0b384}{remove\+Card} (int suit, int value)
+\begin{DoxyCompactList}\small\item\em add\+Card function removes a card to the deck \end{DoxyCompactList}\item 
+void \hyperlink{classdeck_ae872ff1a6f7424f002cdf7e51988128d}{shuffle} ()
+\begin{DoxyCompactList}\small\item\em suffle function randomizes the cards in the deck \end{DoxyCompactList}\item 
+void \hyperlink{classdeck_a6cf31d4e598d0c5b1aa8588eaeacea7c}{deal} (\hyperlink{classPlayer}{Player} $\ast$user)
+\begin{DoxyCompactList}\small\item\em deal function deals a card to a \hyperlink{classPlayer}{Player} \end{DoxyCompactList}\item 
+\hyperlink{classcard}{card} $\ast$ \hyperlink{classdeck_ad99960c3630e78a74612765b01c21b61}{draw} ()
+\begin{DoxyCompactList}\small\item\em draw function draws a card from the deck \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdeck_ab69b4ad21bf7c7798f14cd0524db4905}\label{classdeck_ab69b4ad21bf7c7798f14cd0524db4905}} 
+int {\bfseries deck\+Size}
+\item 
+\mbox{\Hypertarget{classdeck_a98fd9ff7d975e2a880c07bf38cbd0f24}\label{classdeck_a98fd9ff7d975e2a880c07bf38cbd0f24}} 
+std\+::vector$<$ \hyperlink{classcard}{card} $\ast$ $>$ {\bfseries deck\+List}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+deck class creates deck of cards 
+
+deck class creates deck of cards, each card is a pointer to a card object \begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdeck_a2ff8465ba7b13201bdf650fe461b442e}\label{classdeck_a2ff8465ba7b13201bdf650fe461b442e}} 
+\index{deck@{deck}!deck@{deck}}
+\index{deck@{deck}!deck@{deck}}
+\subsubsection{\texorpdfstring{deck()}{deck()}}
+{\footnotesize\ttfamily deck\+::deck (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+deck constructor creates a deck of cards 
+
+deck constructor creates deck of cards, each card is a pointer to a card object, by default this create a deck of 52 cards \begin{DoxyReturn}{Returns}
+deck object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdeck_a12c0517bc9926f407aee8262ace72bf8}\label{classdeck_a12c0517bc9926f407aee8262ace72bf8}} 
+\index{deck@{deck}!add\+Card@{add\+Card}}
+\index{add\+Card@{add\+Card}!deck@{deck}}
+\subsubsection{\texorpdfstring{add\+Card()}{addCard()}}
+{\footnotesize\ttfamily int deck\+::add\+Card (\begin{DoxyParamCaption}\item[{int}]{suit,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+add\+Card function adds a card to the deck 
+
+add\+Card function creates a new card and adds it to the deck 
+\begin{DoxyParams}{Parameters}
+{\em suit} & Suit values are\+: 1 being Spade, 2 being Club, 3 being Heart, 4 being Diamond \\
+\hline
+{\em value} & Face values are\+: 1 being Ace, 11 being Jack, 12 being Queen, 13 being King \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classdeck_a6cf31d4e598d0c5b1aa8588eaeacea7c}\label{classdeck_a6cf31d4e598d0c5b1aa8588eaeacea7c}} 
+\index{deck@{deck}!deal@{deal}}
+\index{deal@{deal}!deck@{deck}}
+\subsubsection{\texorpdfstring{deal()}{deal()}}
+{\footnotesize\ttfamily void deck\+::deal (\begin{DoxyParamCaption}\item[{\hyperlink{classPlayer}{Player} $\ast$}]{user }\end{DoxyParamCaption})}
+
+
+
+deal function deals a card to a \hyperlink{classPlayer}{Player} 
+
+deal function deals a card from the deck and adds it to a players hand 
+\begin{DoxyParams}{Parameters}
+{\em user} & User to add the card to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classdeck_ad99960c3630e78a74612765b01c21b61}\label{classdeck_ad99960c3630e78a74612765b01c21b61}} 
+\index{deck@{deck}!draw@{draw}}
+\index{draw@{draw}!deck@{deck}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \hyperlink{classcard}{card} $\ast$ deck\+::draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+draw function draws a card from the deck 
+
+draw function draws a card from the deck, once the card is drawn the card is removed \begin{DoxyReturn}{Returns}
+a pointer to a card object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classdeck_ada0bdbb4dcd27f39db797925ac0c11ce}\label{classdeck_ada0bdbb4dcd27f39db797925ac0c11ce}} 
+\index{deck@{deck}!get\+Deck\+Size@{get\+Deck\+Size}}
+\index{get\+Deck\+Size@{get\+Deck\+Size}!deck@{deck}}
+\subsubsection{\texorpdfstring{get\+Deck\+Size()}{getDeckSize()}}
+{\footnotesize\ttfamily int deck\+::get\+Deck\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Deck\+Size function returns the size of the deck 
+
+get\+Deck\+Size function returns the number of cards currently left in the deck \begin{DoxyReturn}{Returns}
+Integer that is the size of the deck 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classdeck_a4c60464da694301c1b7b4275bae0b384}\label{classdeck_a4c60464da694301c1b7b4275bae0b384}} 
+\index{deck@{deck}!remove\+Card@{remove\+Card}}
+\index{remove\+Card@{remove\+Card}!deck@{deck}}
+\subsubsection{\texorpdfstring{remove\+Card()}{removeCard()}}
+{\footnotesize\ttfamily int deck\+::remove\+Card (\begin{DoxyParamCaption}\item[{int}]{suit,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+add\+Card function removes a card to the deck 
+
+add\+Card function removes a card from the deck 
+\begin{DoxyParams}{Parameters}
+{\em suit} & Suit values are\+: 1 being Spade, 2 being Club, 3 being Heart, 4 being Diamond \\
+\hline
+{\em value} & Face values are\+: 1 being Ace, 11 being Jack, 12 being Queen, 13 being King \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classdeck_ae872ff1a6f7424f002cdf7e51988128d}\label{classdeck_ae872ff1a6f7424f002cdf7e51988128d}} 
+\index{deck@{deck}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!deck@{deck}}
+\subsubsection{\texorpdfstring{shuffle()}{shuffle()}}
+{\footnotesize\ttfamily void deck\+::shuffle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+suffle function randomizes the cards in the deck 
+
+suffle function randomizes the cards in the deck \begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Base\+Card/Deck.\+h\item 
+Base\+Card/Deck.\+cpp\end{DoxyCompactItemize}

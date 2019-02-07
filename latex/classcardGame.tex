@@ -1,0 +1,113 @@
+\hypertarget{classcardGame}{}\section{card\+Game Class Reference}
+\label{classcardGame}\index{card\+Game@{card\+Game}}
+
+
+Card\+Game class creates a interface for all card games to follow.  
+
+
+
+
+{\ttfamily \#include $<$card\+Game.\+h$>$}
+
+
+
+Inheritance diagram for card\+Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=142pt]{classcardGame__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for card\+Game\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classcardGame__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcardGame_a9f128c2ea5d426a79b506ed02771bdbc}{card\+Game} ()
+\begin{DoxyCompactList}\small\item\em Card\+Game constructor creates a base card game. \end{DoxyCompactList}\item 
+\hyperlink{classcardGame_a23e7135b422d487d761b475713cf2e7a}{$\sim$card\+Game} ()
+\begin{DoxyCompactList}\small\item\em Card\+Game deconstructor frees memory for objects being used. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classcardGame_ae8e04249f37f61e3adfa03cfbad3b021}{play} ()=0
+\begin{DoxyCompactList}\small\item\em play function contains all game logic, run to play \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcardGame_aa0db8fdd6a95e1dda328150c5bc6ed94}\label{classcardGame_aa0db8fdd6a95e1dda328150c5bc6ed94}} 
+\hyperlink{classdeck}{deck} $\ast$ {\bfseries playing\+Deck}
+\item 
+\mbox{\Hypertarget{classcardGame_ad90e58da175c9cb069c8617d9455562d}\label{classcardGame_ad90e58da175c9cb069c8617d9455562d}} 
+std\+::vector$<$ \hyperlink{classPlayer}{Player} $\ast$ $>$ {\bfseries player\+List}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Card\+Game class creates a interface for all card games to follow. 
+
+Card\+Game class provides all card games a deck of cards and a player list to let the programmer use in game logic. \begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcardGame_a9f128c2ea5d426a79b506ed02771bdbc}\label{classcardGame_a9f128c2ea5d426a79b506ed02771bdbc}} 
+\index{card\+Game@{card\+Game}!card\+Game@{card\+Game}}
+\index{card\+Game@{card\+Game}!card\+Game@{card\+Game}}
+\subsubsection{\texorpdfstring{card\+Game()}{cardGame()}}
+{\footnotesize\ttfamily card\+Game\+::card\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Card\+Game constructor creates a base card game. 
+
+Card\+Game constructor creates a base card game, and creates a new deck for the user to use. \begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcardGame}{card\+Game} object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcardGame_a23e7135b422d487d761b475713cf2e7a}\label{classcardGame_a23e7135b422d487d761b475713cf2e7a}} 
+\index{card\+Game@{card\+Game}!````~card\+Game@{$\sim$card\+Game}}
+\index{````~card\+Game@{$\sim$card\+Game}!card\+Game@{card\+Game}}
+\subsubsection{\texorpdfstring{$\sim$card\+Game()}{~cardGame()}}
+{\footnotesize\ttfamily card\+Game\+::$\sim$card\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Card\+Game deconstructor frees memory for objects being used. 
+
+Card\+Game deconstructor frees the current deck being used \begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcardGame_ae8e04249f37f61e3adfa03cfbad3b021}\label{classcardGame_ae8e04249f37f61e3adfa03cfbad3b021}} 
+\index{card\+Game@{card\+Game}!play@{play}}
+\index{play@{play}!card\+Game@{card\+Game}}
+\subsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily virtual void card\+Game\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+play function contains all game logic, run to play 
+
+play function contains all game logic, implentation of this function is completely up to game designer \begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+
+
+Implemented in \hyperlink{classWar_a507414bb7608a837b7b884827795de81}{War}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Base\+Card/card\+Game.\+h\item 
+Base\+Card/card\+Game.\+cpp\end{DoxyCompactItemize}

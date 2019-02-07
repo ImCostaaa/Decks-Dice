@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classcardGame.html" title="CardGame class creates a interface for all card games to follow. " alt="" coords="5,5,88,32"/>
+<area shape="rect" id="node2" href="$classWar.html" title="War class contains all game logic for the card game war. " alt="" coords="136,5,183,32"/>
+</map>

@@ -1,0 +1,77 @@
+\hypertarget{classcardGameFactory}{}\section{card\+Game\+Factory Class Reference}
+\label{classcardGameFactory}\index{card\+Game\+Factory@{card\+Game\+Factory}}
+
+
+\hyperlink{classcardGameFactory}{card\+Game\+Factory} class creates a factory that creates a card game.  
+
+
+
+
+{\ttfamily \#include $<$card\+Game\+Factory.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcardGameFactory_a459f1b1dcf3366a7d8ed80fa50caf1f1}{card\+Game\+Factory} ()
+\begin{DoxyCompactList}\small\item\em \hyperlink{classcardGameFactory}{card\+Game\+Factory} constructor creates a factory that creates a card game. \end{DoxyCompactList}\item 
+\hyperlink{classcardGame}{card\+Game} $\ast$ \hyperlink{classcardGameFactory_a9edb0e4817b525169a6346ad687542e2}{create\+Card\+Game} (std\+::string name, std\+::vector$<$ \hyperlink{classPlayer}{Player} $\ast$$>$ players)
+\begin{DoxyCompactList}\small\item\em create\+Card\+Game function creates the card game that is passed in the parameters \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classcardGameFactory}{card\+Game\+Factory} class creates a factory that creates a card game. 
+
+Card\+Game\+Factory class creates a factory that creates a card game, the type of game is passed in the create\+Card\+Game function. \begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcardGameFactory_a459f1b1dcf3366a7d8ed80fa50caf1f1}\label{classcardGameFactory_a459f1b1dcf3366a7d8ed80fa50caf1f1}} 
+\index{card\+Game\+Factory@{card\+Game\+Factory}!card\+Game\+Factory@{card\+Game\+Factory}}
+\index{card\+Game\+Factory@{card\+Game\+Factory}!card\+Game\+Factory@{card\+Game\+Factory}}
+\subsubsection{\texorpdfstring{card\+Game\+Factory()}{cardGameFactory()}}
+{\footnotesize\ttfamily card\+Game\+Factory\+::card\+Game\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\hyperlink{classcardGameFactory}{card\+Game\+Factory} constructor creates a factory that creates a card game. 
+
+\hyperlink{classcardGameFactory}{card\+Game\+Factory} class creates a factory that creates a card game. \begin{DoxyReturn}{Returns}
+\hyperlink{classcardGameFactory}{card\+Game\+Factory} object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcardGameFactory_a9edb0e4817b525169a6346ad687542e2}\label{classcardGameFactory_a9edb0e4817b525169a6346ad687542e2}} 
+\index{card\+Game\+Factory@{card\+Game\+Factory}!create\+Card\+Game@{create\+Card\+Game}}
+\index{create\+Card\+Game@{create\+Card\+Game}!card\+Game\+Factory@{card\+Game\+Factory}}
+\subsubsection{\texorpdfstring{create\+Card\+Game()}{createCardGame()}}
+{\footnotesize\ttfamily \hyperlink{classcardGame}{card\+Game} $\ast$ card\+Game\+Factory\+::create\+Card\+Game (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::vector$<$ \hyperlink{classPlayer}{Player} $\ast$$>$}]{players }\end{DoxyParamCaption})}
+
+
+
+create\+Card\+Game function creates the card game that is passed in the parameters 
+
+\hyperlink{classcardGameFactory}{card\+Game\+Factory} function take the string passed and creates the appropiate type of game 
+\begin{DoxyParams}{Parameters}
+{\em name} & String containing the name of the game to be created, must be a valid game \\
+\hline
+{\em players} & Vector containing a pointers to all players playing the game \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classcardGame}{card\+Game} object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Base\+Card/card\+Game\+Factory.\+h\item 
+Base\+Card/card\+Game\+Factory.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,110 @@
+\hypertarget{classpig}{}\section{pig Class Reference}
+\label{classpig}\index{pig@{pig}}
+
+
+Contains all the logic required for pig, a dice game.  
+
+
+
+
+{\ttfamily \#include $<$pig.\+h$>$}
+
+
+
+Inheritance diagram for pig\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=141pt]{classpig__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for pig\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{classpig__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpig_a14f66c6f931e7f88e887d1af8e06eadc}\label{classpig_a14f66c6f931e7f88e887d1af8e06eadc}} 
+{\bfseries pig} (std\+::vector$<$ \hyperlink{classPlayer}{Player} $\ast$$>$ players)
+\item 
+void \hyperlink{classpig_a83fd8571e2f33ec33f6fafd7efa96571}{play} ()
+\begin{DoxyCompactList}\small\item\em play function which allows the players to play the game \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classpig_a548163e47b2f1b82fd9fb6c20caf7092}\label{classpig_a548163e47b2f1b82fd9fb6c20caf7092}} 
+std\+::vector$<$ \hyperlink{classPlayer}{Player} $\ast$ $>$ {\bfseries player\+List}
+\item 
+\mbox{\Hypertarget{classpig_ae4fe8f68279a723773d0041f4210c315}\label{classpig_ae4fe8f68279a723773d0041f4210c315}} 
+int {\bfseries num\+Of\+Players}
+\item 
+\mbox{\Hypertarget{classpig_ad7c324c675cf9b720c3144be43093d83}\label{classpig_ad7c324c675cf9b720c3144be43093d83}} 
+\hyperlink{classdice}{dice} $\ast$ {\bfseries d}
+\item 
+\mbox{\Hypertarget{classpig_a7ef22bd927c220866f15abcb28f33f32}\label{classpig_a7ef22bd927c220866f15abcb28f33f32}} 
+int {\bfseries score}
+\item 
+\mbox{\Hypertarget{classpig_aa79cb61f2628fe37edd36ad76af4d081}\label{classpig_aa79cb61f2628fe37edd36ad76af4d081}} 
+int {\bfseries current\+Roll}
+\item 
+\mbox{\Hypertarget{classpig_abfb581424e14beb6250acf5df111a417}\label{classpig_abfb581424e14beb6250acf5df111a417}} 
+bool {\bfseries playing}
+\item 
+\mbox{\Hypertarget{classpig_a6a6c1566b19486cceb33910c902348b0}\label{classpig_a6a6c1566b19486cceb33910c902348b0}} 
+std\+::string {\bfseries input}
+\item 
+\mbox{\Hypertarget{classpig_ac35d859274db9267f8b7039b50e65bfe}\label{classpig_ac35d859274db9267f8b7039b50e65bfe}} 
+std\+::string {\bfseries plyr}
+\item 
+\mbox{\Hypertarget{classpig_a5159b3cb3879e33b9bf1adad4c2c270b}\label{classpig_a5159b3cb3879e33b9bf1adad4c2c270b}} 
+int {\bfseries top\+Score}
+\item 
+\mbox{\Hypertarget{classpig_a98a7c1492538a8c643a42eba071ca7e4}\label{classpig_a98a7c1492538a8c643a42eba071ca7e4}} 
+\hyperlink{classPlayer}{Player} {\bfseries top\+Player}
+\item 
+\mbox{\Hypertarget{classpig_a1d5787bef5d4a72458e84c4b094b00fe}\label{classpig_a1d5787bef5d4a72458e84c4b094b00fe}} 
+bool {\bfseries tie}
+\item 
+\mbox{\Hypertarget{classpig_a99faed0cf1d6a816db10e100531f698f}\label{classpig_a99faed0cf1d6a816db10e100531f698f}} 
+int {\bfseries count}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains all the logic required for pig, a dice game. 
+
+\begin{DoxyAuthor}{Author}
+Owen Hunsburger 250919957
+\end{DoxyAuthor}
+Uses dice object and a vector of players, uses \hyperlink{classdiceGame}{dice\+Game} as a template 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classpig_a83fd8571e2f33ec33f6fafd7efa96571}\label{classpig_a83fd8571e2f33ec33f6fafd7efa96571}} 
+\index{pig@{pig}!play@{play}}
+\index{play@{play}!pig@{pig}}
+\subsubsection{\texorpdfstring{play()}{play()}}
+{\footnotesize\ttfamily void pig\+::play (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+play function which allows the players to play the game 
+
+\begin{DoxyAuthor}{Author}
+Owen Hunsburger 250919957
+\end{DoxyAuthor}
+calls the game which implements the game logic and takes user input 
+
+Implements \hyperlink{classdiceGame_a0620d98347df4779fa620b3b3e239d4e}{dice\+Game}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Pig/pig.\+h\item 
+Pig/pig.\+cpp\end{DoxyCompactItemize}

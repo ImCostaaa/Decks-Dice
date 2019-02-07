@@ -1,0 +1,5 @@
+<map id="pig" name="pig">
+<area shape="rect" id="node2" href="$classdiceGame.html" title="Interface for all dice games to use. " alt="" coords="44,95,125,121"/>
+<area shape="rect" id="node3" href="$classdice.html" title="Simulates the rolling of dice. " alt="" coords="5,5,52,32"/>
+<area shape="rect" id="node4" href="$classPlayer.html" title="Provides a class representation of everything a player has in and associated with a game..." alt="" coords="150,95,209,121"/>
+</map>

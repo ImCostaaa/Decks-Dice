@@ -1,0 +1,77 @@
+\hypertarget{classdiceFactory}{}\section{dice\+Factory Class Reference}
+\label{classdiceFactory}\index{dice\+Factory@{dice\+Factory}}
+
+
+Creates a faactory that produces dice games.  
+
+
+
+
+{\ttfamily \#include $<$dice\+Factory.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdiceFactory_ac4295df51faa766d54a2bde240c3f1a8}{dice\+Factory} ()
+\begin{DoxyCompactList}\small\item\em Empty constructor function. \end{DoxyCompactList}\item 
+\hyperlink{classdiceGame}{dice\+Game} $\ast$ \hyperlink{classdiceFactory_a591c320ac45d0919c9368ea867c856b9}{create\+Dice\+Game} (std\+::string name, std\+::vector$<$ \hyperlink{classPlayer}{Player} $\ast$$>$ players)
+\begin{DoxyCompactList}\small\item\em creates a dice game based on the parameters \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Creates a faactory that produces dice games. 
+
+\begin{DoxyAuthor}{Author}
+Owen Hunsburger 250919957  creates a factory which in turn creates a dice game based on the input name 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdiceFactory_ac4295df51faa766d54a2bde240c3f1a8}\label{classdiceFactory_ac4295df51faa766d54a2bde240c3f1a8}} 
+\index{dice\+Factory@{dice\+Factory}!dice\+Factory@{dice\+Factory}}
+\index{dice\+Factory@{dice\+Factory}!dice\+Factory@{dice\+Factory}}
+\subsubsection{\texorpdfstring{dice\+Factory()}{diceFactory()}}
+{\footnotesize\ttfamily dice\+Factory\+::dice\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Empty constructor function. 
+
+\begin{DoxyAuthor}{Author}
+Owen Hunsburger 250919957 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+Allows for the factory to be called and produce a game
+\end{DoxyReturn}
+the calass 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdiceFactory_a591c320ac45d0919c9368ea867c856b9}\label{classdiceFactory_a591c320ac45d0919c9368ea867c856b9}} 
+\index{dice\+Factory@{dice\+Factory}!create\+Dice\+Game@{create\+Dice\+Game}}
+\index{create\+Dice\+Game@{create\+Dice\+Game}!dice\+Factory@{dice\+Factory}}
+\subsubsection{\texorpdfstring{create\+Dice\+Game()}{createDiceGame()}}
+{\footnotesize\ttfamily \hyperlink{classdiceGame}{dice\+Game} $\ast$ dice\+Factory\+::create\+Dice\+Game (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::vector$<$ \hyperlink{classPlayer}{Player} $\ast$$>$}]{players }\end{DoxyParamCaption})}
+
+
+
+creates a dice game based on the parameters 
+
+\begin{DoxyAuthor}{Author}
+Owen Hunsburger 250919957 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & is a String that tells the function which game to create \\
+\hline
+{\em players} & is a Vector that contains pointers to all players that are playing the game \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classdiceGame}{dice\+Game} object
+\end{DoxyReturn}
+The function creates an instance of a game based on the input game name and allows the inputted used to play 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Base\+Dice/dice\+Factory.\+h\item 
+Base\+Dice/dice\+Factory.\+cpp\end{DoxyCompactItemize}

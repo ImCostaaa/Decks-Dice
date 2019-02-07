@@ -1,0 +1,83 @@
+\hypertarget{classdice}{}\section{dice Class Reference}
+\label{classdice}\index{dice@{dice}}
+
+
+Simulates the rolling of dice.  
+
+
+
+
+{\ttfamily \#include $<$dice.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classdice_adfe43c5d338217b1c97c7b4cae67ae0b}{dice} ()
+\begin{DoxyCompactList}\small\item\em Empty constructor to allow the declaration of a Dice object. \end{DoxyCompactList}\item 
+int \hyperlink{classdice_aa8adb2ec6d5d5b601826868bd6619aa0}{roll} (int num\+Of\+Sides, int num\+Of\+Rolls)
+\begin{DoxyCompactList}\small\item\em Simulates the roll of (Y) dice with (X) sides. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classdice_a6eb1a540f3a82ef120f41affddf36ed0}\label{classdice_a6eb1a540f3a82ef120f41affddf36ed0}} 
+int {\bfseries sum}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simulates the rolling of dice. 
+
+\begin{DoxyAuthor}{Author}
+Owen Hunsburger 250919957
+\end{DoxyAuthor}
+The Dice class allows the users to input the number of sides on the dice and the number of rolls. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdice_adfe43c5d338217b1c97c7b4cae67ae0b}\label{classdice_adfe43c5d338217b1c97c7b4cae67ae0b}} 
+\index{dice@{dice}!dice@{dice}}
+\index{dice@{dice}!dice@{dice}}
+\subsubsection{\texorpdfstring{dice()}{dice()}}
+{\footnotesize\ttfamily dice\+::dice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Empty constructor to allow the declaration of a Dice object. 
+
+\begin{DoxyAuthor}{Author}
+Owen Hunsburger 250919957 
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+N\+U\+LL
+\end{DoxyReturn}
+Allows objects in other classes to call the roll command, delaring the number of sides and rolls each time the function is called. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classdice_aa8adb2ec6d5d5b601826868bd6619aa0}\label{classdice_aa8adb2ec6d5d5b601826868bd6619aa0}} 
+\index{dice@{dice}!roll@{roll}}
+\index{roll@{roll}!dice@{dice}}
+\subsubsection{\texorpdfstring{roll()}{roll()}}
+{\footnotesize\ttfamily int dice\+::roll (\begin{DoxyParamCaption}\item[{int}]{num\+Of\+Sides,  }\item[{int}]{num\+Of\+Rolls }\end{DoxyParamCaption})}
+
+
+
+Simulates the roll of (Y) dice with (X) sides. 
+
+\begin{DoxyAuthor}{Author}
+Owen Hunsburger 250919957 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Of\+Sides} & is an int that represents the number of sides on the dice thats to be rolled \\
+\hline
+{\em num\+Of\+Rolls} & is an int that represents the number of times the dice will be rolled \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sum of all the required rolls
+\end{DoxyReturn}
+Randomly generate a number (Z), modulo the number by X then add 1. Performs this Y times, adding the total of each simulated roll to the returned value. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Base\+Dice/dice.\+h\item 
+Base\+Dice/dice.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,166 @@
+\hypertarget{classcard}{}\section{card Class Reference}
+\label{classcard}\index{card@{card}}
+
+
+Card class represents a playing card with a suit and value.  
+
+
+
+
+{\ttfamily \#include $<$Card.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcard_acfb86f1ab0161ad4445c6d08c2aa5bb5}{card} (int suit, int value)
+\begin{DoxyCompactList}\small\item\em Card constructor creates a Card object. \end{DoxyCompactList}\item 
+int \hyperlink{classcard_a952559b02cf7d0c468fb4d89e145ad48}{get\+Suit} ()
+\begin{DoxyCompactList}\small\item\em get\+Suit gets the suit value as an integer \end{DoxyCompactList}\item 
+int \hyperlink{classcard_a5cf12898a17ff2eda5469eaf857e286d}{get\+Value} ()
+\begin{DoxyCompactList}\small\item\em get\+Value gets the card value as an integer \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classcard_a1038b6c4a093a84ccdea7e3b191dcadd}{get\+Suit\+Name} ()
+\begin{DoxyCompactList}\small\item\em get\+Suit gets the suit value as an String \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classcard_a1fb74af5bd396a5b721adedf3f04af17}{get\+Value\+Name} ()
+\begin{DoxyCompactList}\small\item\em get\+Value gets the card value as an String \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcard_aa10e2884f273f75aa313a8bb5a6251f3}\label{classcard_aa10e2884f273f75aa313a8bb5a6251f3}} 
+const int {\bfseries A\+CE} = 1
+\item 
+\mbox{\Hypertarget{classcard_a6b40b986e5bf417dc80ac4b6ef90d1a1}\label{classcard_a6b40b986e5bf417dc80ac4b6ef90d1a1}} 
+const int {\bfseries J\+A\+CK} = 11
+\item 
+\mbox{\Hypertarget{classcard_aa09c255786e6ee4d89f731aa500fd07a}\label{classcard_aa09c255786e6ee4d89f731aa500fd07a}} 
+const int {\bfseries Q\+U\+E\+EN} = 12
+\item 
+\mbox{\Hypertarget{classcard_a3dc8786d461be27ba29989676cdd4e44}\label{classcard_a3dc8786d461be27ba29989676cdd4e44}} 
+const int {\bfseries K\+I\+NG} = 13
+\item 
+\mbox{\Hypertarget{classcard_acfc456145e637a32f29657fb25964f30}\label{classcard_acfc456145e637a32f29657fb25964f30}} 
+const int {\bfseries S\+P\+A\+DE} = 1
+\item 
+\mbox{\Hypertarget{classcard_ac2613bacd68296da2362a74fd3972c8c}\label{classcard_ac2613bacd68296da2362a74fd3972c8c}} 
+const int {\bfseries C\+L\+UB} = 2
+\item 
+\mbox{\Hypertarget{classcard_ad702ec3223c4b79a958a6ebd56887a32}\label{classcard_ad702ec3223c4b79a958a6ebd56887a32}} 
+const int {\bfseries H\+E\+A\+RT} = 3
+\item 
+\mbox{\Hypertarget{classcard_a7a30e10aeb7f2f1d6c766dd37aa8ac16}\label{classcard_a7a30e10aeb7f2f1d6c766dd37aa8ac16}} 
+const int {\bfseries D\+I\+A\+M\+O\+ND} = 4
+\item 
+\mbox{\Hypertarget{classcard_a173236802fa7d0c52e411523ae9d30fa}\label{classcard_a173236802fa7d0c52e411523ae9d30fa}} 
+int {\bfseries suit}
+\item 
+\mbox{\Hypertarget{classcard_a8c8ecc859e715ee6b55bef5d692f508b}\label{classcard_a8c8ecc859e715ee6b55bef5d692f508b}} 
+int {\bfseries value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Card class represents a playing card with a suit and value. 
+
+Card class provides functions to convert number values of cards to their string representation. ~\newline
+Face values are\+: 1 being Ace, 11 being Jack, 12 being Queen, 13 being King ~\newline
+Suit values are\+: 1 being Spade, 2 being Club, 3 being Heart, 4 being Diamond \begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcard_acfb86f1ab0161ad4445c6d08c2aa5bb5}\label{classcard_acfb86f1ab0161ad4445c6d08c2aa5bb5}} 
+\index{card@{card}!card@{card}}
+\index{card@{card}!card@{card}}
+\subsubsection{\texorpdfstring{card()}{card()}}
+{\footnotesize\ttfamily card\+::card (\begin{DoxyParamCaption}\item[{int}]{suit,  }\item[{int}]{value }\end{DoxyParamCaption})}
+
+
+
+Card constructor creates a Card object. 
+
+Card constructor creates a Card object using numbers to represent the values of the cards. 
+\begin{DoxyParams}{Parameters}
+{\em value} & Face values are\+: 1 being Ace, 11 being Jack, 12 being Queen, 13 being King \\
+\hline
+{\em suit} & Suit values are\+: 1 being Spade, 2 being Club, 3 being Heart, 4 being Diamond \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+card object 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcard_a952559b02cf7d0c468fb4d89e145ad48}\label{classcard_a952559b02cf7d0c468fb4d89e145ad48}} 
+\index{card@{card}!get\+Suit@{get\+Suit}}
+\index{get\+Suit@{get\+Suit}!card@{card}}
+\subsubsection{\texorpdfstring{get\+Suit()}{getSuit()}}
+{\footnotesize\ttfamily int card\+::get\+Suit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Suit gets the suit value as an integer 
+
+Face values are\+: 1 being Ace, 11 being Jack, 12 being Queen, 13 being King \begin{DoxyReturn}{Returns}
+suit value as an integer 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classcard_a1038b6c4a093a84ccdea7e3b191dcadd}\label{classcard_a1038b6c4a093a84ccdea7e3b191dcadd}} 
+\index{card@{card}!get\+Suit\+Name@{get\+Suit\+Name}}
+\index{get\+Suit\+Name@{get\+Suit\+Name}!card@{card}}
+\subsubsection{\texorpdfstring{get\+Suit\+Name()}{getSuitName()}}
+{\footnotesize\ttfamily string card\+::get\+Suit\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Suit gets the suit value as an String 
+
+Suit values are\+: 1 being Spade, 2 being Club, 3 being Heart, 4 being Diamond \begin{DoxyReturn}{Returns}
+suit value as an String 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classcard_a5cf12898a17ff2eda5469eaf857e286d}\label{classcard_a5cf12898a17ff2eda5469eaf857e286d}} 
+\index{card@{card}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!card@{card}}
+\subsubsection{\texorpdfstring{get\+Value()}{getValue()}}
+{\footnotesize\ttfamily int card\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Value gets the card value as an integer 
+
+Suit values are\+: 1 being Spade, 2 being Club, 3 being Heart, 4 being Diamond \begin{DoxyReturn}{Returns}
+card value as an integer 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+\mbox{\Hypertarget{classcard_a1fb74af5bd396a5b721adedf3f04af17}\label{classcard_a1fb74af5bd396a5b721adedf3f04af17}} 
+\index{card@{card}!get\+Value\+Name@{get\+Value\+Name}}
+\index{get\+Value\+Name@{get\+Value\+Name}!card@{card}}
+\subsubsection{\texorpdfstring{get\+Value\+Name()}{getValueName()}}
+{\footnotesize\ttfamily string card\+::get\+Value\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+get\+Value gets the card value as an String 
+
+Face values are\+: 1 being Ace, 11 being Jack, 12 being Queen, 13 being King \begin{DoxyReturn}{Returns}
+card value as an String 
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Jacob Ross 250892852 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Base\+Card/Card.\+h\item 
+Base\+Card/Card.\+cpp\end{DoxyCompactItemize}

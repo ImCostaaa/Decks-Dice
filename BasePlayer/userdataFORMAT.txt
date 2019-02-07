@@ -1,0 +1,4 @@
+LOGIN
+username,password,balance   //string,string,double
+GAME_NAME_X                 //This name is passed as the parameter to getHighscore(string game) function
+username,highscore          //string,double
